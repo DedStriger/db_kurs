@@ -104,8 +104,8 @@ case 'cornfield':
 		break;
 
 					case 'buy':
-					$i =  $dbh->query('SELECT * FROM buy');
-	if ($i) {
+					$i =  $dbh->query('SELECT COUNT(*) FROM buy');
+	if ($i->fetchColumn() != 0) {
 	$main_table = $dbh->query('SELECT * FROM buy');
 	echo " 
 	<div class='row'>
