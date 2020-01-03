@@ -142,6 +142,6 @@ $c = (int) $_POST['cof'];
 if (isset($_POST['add'])){
 
 $dbh->query("call addFermer('".$_POST["n"]."','".$_POST["b"]."','".$_POST["c"]."','".$_POST["a"]."',".(int)$_POST["ac"].",'".$_POST["s"]."')");
-var_dump($_POST);
+
 }
  ?>
